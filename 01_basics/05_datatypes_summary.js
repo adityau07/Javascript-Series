@@ -78,3 +78,41 @@ console.log(myVariable); // Output: Hello, World!
 
 In the example above, myVariable starts as a number, and later in the program, its value is changed to a string. JavaScript allows this kind of flexibility, and the interpreter figures out the data type during runtime.
 */
+
+
+
+//************** Video 10: Stack and Heap Memory in Javascript *******/
+
+// Stack (Primitive), Heap (Non primitive)
+
+
+//*** Stack - copy
+let myYoutubename = "HiteshChoudhary"
+
+let anotherName = myYoutubename
+anotherName = "ChaiaurCode"
+
+console.log(myYoutubename)
+console.log(anotherName)
+
+//***** Heap - reference
+
+let userOne = {
+    email:"user@gmail.com",
+    upi: "abc@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+/*datatypes are based on memory allocation
+
+Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it. */
