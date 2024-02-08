@@ -1,2 +1,2 @@
-# Javascript-Youtube
+# Javascript-Series
 A code repo for javascript series
