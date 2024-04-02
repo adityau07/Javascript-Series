@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript Apna College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="console.log('button is clicked')">Click Me!!</button>  
+    <!--in line number 9 onclick is event-->
+
+    <button ondblclick="console.log('button is clicked 2 times')">Click Me 2 times!!</button>  
+    <!--in line number 12 ondblclick is event-->
+
+    <div onmouseover="console.log('you are inside div')">This is div</div>
+    <!--in line number 16 onmouseover is event-->
+
+    <!-- Above three are examples of inline event handling, but it is not good practise
+    we should add events in separate js file-->
+
+    <!-- Event using js: node.event= ()=> -->
+    <button id="btn3">This is button 3</button>
+
+    <!--Event Listener Example below: -->
+    <button id="btn4">Button 4 Event Listeners</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
